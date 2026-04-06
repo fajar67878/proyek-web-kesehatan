@@ -1,0 +1,23 @@
+# Mengabaikan folder virtual environment (sangat penting)
+venv/
+.venv/
+env/
+/venv/
+
+# Mengabaikan file cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Mengabaikan pengaturan VS Code pribadi
+.vscode/
+
+# Mengabaikan file log dan database sementara
+*.log
+instance/
+.webassets-cache
+
+# Mengabaikan file environment variable (jika ada)
+.env
