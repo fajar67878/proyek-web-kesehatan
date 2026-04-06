@@ -18,7 +18,7 @@ if os.path.exists('data_berat.csv'):
     model.fit(X, y)
 else:
     print("❌ ERROR: File data_berat.csv TIDAK DITEMUKAN di folder ini!")
-    exit() # Hentikan program agar tidak bingung
+    
 # ----------------------------------
 
 @app.route('/prediksi-berat', methods=['GET', 'POST'])
