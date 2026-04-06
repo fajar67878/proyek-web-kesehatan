@@ -21,10 +21,12 @@ else:
     
 # ----------------------------------
 
-@app.route('/') # Hapus /prediksi-berat, sisakan garis miring saja
+# Ubah dari @app.route('/prediksi-berat', ...) menjadi ini:
+@app.route('/', methods=['GET', 'POST'])
 def prediksi_berat():
     hasil = None
     kalori = None
+    # ... sisa kode kamu tetap sama ...
     
     if request.method == 'POST':
         try:
