@@ -40,7 +40,9 @@ def prediksi_berat():
     # Ubah bagian return di fungsi prediksi_berat() menjadi seperti ini:
     return render_template('index.html', 
                            hasil=hasil, 
+
                            kalori=kalori, 
+                           
                            data_tabel=df.to_dict(orient='records'))
 if __name__ == '__main__':
     print("🚀 Memulai Server Flask...")
