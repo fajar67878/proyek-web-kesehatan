@@ -38,7 +38,7 @@ def prediksi_berat():
             print(f"Error saat prediksi: {e}")
             
     # Ubah bagian return di fungsi prediksi_berat() menjadi seperti ini:
-    return render_template('berat.html', 
+    return render_template('index.html', 
                            hasil=hasil, 
                            kalori=kalori, 
                            data_tabel=df.to_dict(orient='records'))
