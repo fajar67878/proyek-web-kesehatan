@@ -21,7 +21,7 @@ else:
     
 # ----------------------------------
 
-@app.route('/prediksi-berat', methods=['GET', 'POST'])
+@app.route('/') # Hapus /prediksi-berat, sisakan garis miring saja
 def prediksi_berat():
     hasil = None
     kalori = None
@@ -42,7 +42,7 @@ def prediksi_berat():
                            hasil=hasil, 
 
                            kalori=kalori, 
-                           
+
                            data_tabel=df.to_dict(orient='records'))
 if __name__ == '__main__':
     print("🚀 Memulai Server Flask...")
